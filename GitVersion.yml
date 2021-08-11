@@ -1,4 +1,4 @@
-mode: ContinuousDelivery
+mode: Mainline
 # Conventional Commits https://www.conventionalcommits.org/en/v1.0.0/
 # https://regex101.com/r/Ms7Vx6/2
 major-version-bump-message: "(build|chore|ci|docs|feat|fix|perf|refactor|revert|style|test)(\\([a-z]+\\))?(!: .+|: (.+\\n\\n)+BREAKING CHANGE: .+)"
@@ -7,7 +7,7 @@ minor-version-bump-message: "(feat)(\\([a-z]+\\))?: .+"
 # https://regex101.com/r/f5C4fP/1
 patch-version-bump-message: "(build|chore|ci|docs|fix|perf|refactor|revert|style|test)(\\([a-z]+\\))?: .+"
 # Match nothing
-no-bump-message: ^\b$
+no-bump-message: '\+semver:\s?(none|skip)'
 continuous-delivery-fallback-tag: ''
 branches:
   development:
