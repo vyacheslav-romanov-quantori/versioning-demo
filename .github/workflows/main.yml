@@ -2,9 +2,12 @@ name: Versioning CI Flow
 
 on:
   push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+    branches:
+      - main
+      - develop
+      - hotfix/*
+      - feature/*
+      - release/*
 
   workflow_dispatch:
 
